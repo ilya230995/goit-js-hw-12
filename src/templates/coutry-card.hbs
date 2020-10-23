@@ -1,0 +1,15 @@
+<h2 class="card-title">{{name}}</h2>
+<div class="coutry-card">
+    <div class="text__wrapper">
+        <P>Capital: {{capital}}</P>
+        <p>Population: {{population}}</p>
+        <h3>Languages:</h3>
+        <ul>
+            {{#each languages}}
+            <li>{{name}}</li>
+            {{/each}}
+        </ul>
+
+    </div>
+    <img class="card-img" src="{{flag}}">
+</div>
