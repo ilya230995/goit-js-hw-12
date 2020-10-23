@@ -17,13 +17,6 @@ import '@pnotify/core/dist/BrightTheme.css';
 const inputRef = document.querySelector('.js-search-form');
 const countryListRef = document.querySelector('.coutry-list');
 
-// const inputValue = event.currentTarget.elements.query.value;
-
-
-
-// fetch(`https://restcountries.eu/rest/v2/name/${inputValue}`).then(res =>
-//   res.json(),
-// );
 inputRef.addEventListener('input', debounce(countriesHandler, 800));
 
 function countriesHandler(e) {
